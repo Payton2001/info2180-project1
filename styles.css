@@ -44,7 +44,8 @@ nav li {
 
 
 li a:link {
-    color: #6b7280;
+    color: black;
+    font-weight: bold;
     text-decoration: none;
 
 }
@@ -61,6 +62,8 @@ ul {
     width: 100%;
 }
 
+/* Hero View*/
+
 .overview-hero {
     background-color: #E2E8F0;
     vertical-align: middle;
@@ -72,6 +75,12 @@ ul {
 .overview-hero-text {
     float: right;
     inline-size: 600px;
+}
+
+.overview-hero img {
+    height: 200px;
+    width: auto;
+    float: left;
 }
 
 
@@ -103,6 +112,7 @@ li a:hover {
     margin-bottom: 10px;
     justify-self: center;
     padding: 10px;
+    font-weight: 500;
 
 }
 
@@ -116,7 +126,14 @@ li a:hover {
 .card-body h3 {
     color: #48BB78;
     font-size: 21px;
-    
+}
+
+.card img {
+    height: 200px;
+    width: 250px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Testing Section*/
@@ -144,7 +161,7 @@ li a:hover {
     background-color: #48BB78;
     position: relative;
     font-size: 16px;
-    font-weight: solid;
+    font-weight: 300;
     margin: 65px 25px 0px 65px;
     float: right;
     vertical-align: middle;
@@ -158,14 +175,21 @@ li a:hover {
 }
 
 /* Stories Section*/
+
+.stories .container {
+    display: grid;
+    grid-row: 5;
+}
+
 .stories h2 {
     color: #5A67D8;
     text-align: left;
 }
 
-.stories a{
+.stories a:link{
     color: #5A67D8;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .stories a:hover{
@@ -177,7 +201,13 @@ li a:hover {
     font-size: 18px;
 }
 
-
+.stories img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    margin: 20px 20px 20px 0px;
+    float: left;
+}
 
 /* NewsLetter Section*/
 .newsletter {
@@ -232,7 +262,7 @@ input {
     color: white;
     box-shadow: 5px;
     display: inline-block;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     vertical-align: middle;
     padding: .375rem .75rem;
@@ -251,4 +281,5 @@ footer {
     color: white;
     padding: 3px;
     vertical-align: middle;
+    font-weight: 300;
 }
