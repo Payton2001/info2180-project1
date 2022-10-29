@@ -4,21 +4,54 @@ body {
     margin: 0;
     font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-    
+
 }
 
 header {
     background-color: white;
     font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
+}
+
+header .container {
+    display: flex;
+    align-items: center;
 }
 
 h1 {
+    float: left;
+    margin-right: 180px;
     font-size: 18px;
+
 }
 
-a {
+nav {
+    float: right;
+    display: flex;
+    overflow: hidden;
+}
+
+nav li {
+    text-align: right;
+    float: left;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+
+li a:link {
     color: #6b7280;
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+    float: right;
 }
 
 /* */
@@ -30,11 +63,22 @@ a {
 
 .overview-hero {
     background-color: #E2E8F0;
+    vertical-align: middle;
+    padding: 30px;
+    display: flex;
+    align-items: center;
 }
 
-.hover{
+.overview-hero-text {
+    float: right;
+    inline-size: 600px;
+}
+
+
+li a:hover {
     color: #5A67D8;
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Learn Baout Section*/
@@ -44,45 +88,127 @@ a {
 
 }
 
+.learn-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Cards Section*/
 .card {
-    border-color: #E2E8F0;
-    box-shadow: 5px;
+    border: 2px solid #E2E8F0;
+    padding: 10px;
+    box-shadow: 0px 1px #6b7280;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    justify-self: center;
+    padding: 10px;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
+
 }
 
 .card-body h3 {
     color: #48BB78;
     font-size: 21px;
+    
 }
 
 /* Testing Section*/
 .testing {
     background-color: #4A5568;
     color: white;
+    text-align: left;
+    padding: 30px;
+    align-content: center;
+    justify-content: center;
+
 }
 
-.testing a {
+.testing .container {
+    display: flex; 
+}
+
+.cta a:link {
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.testing .btn {
     background-color: #48BB78;
-    box-shadow: 5px;
+    position: relative;
+    font-size: 16px;
+    font-weight: solid;
+    margin: 65px 25px 0px 65px;
+    float: right;
+    vertical-align: middle;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.testing-desciption {
+    inline-size: 600px;
+
 }
 
 /* Stories Section*/
-.stories h2 a {
+.stories h2 {
     color: #5A67D8;
+    text-align: left;
+}
+
+.stories a{
+    color: #5A67D8;
+    text-decoration: none;
+}
+
+.stories a:hover{
+    color: #4A5568;
+    cursor: pointer;
 }
 
 .stories h3 {
     font-size: 18px;
 }
 
-.stories img {
-    border-radius: 50%;
-}
+
 
 /* NewsLetter Section*/
 .newsletter {
     background-color: #48BB78;
     color: white;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+.newsletter .container {
+    inline-size: 500px;
+    justify-content: center;
+    display: inline-block;
+
+}
+
+.newsletter p {
+    text-align: left;
+}
+form {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    vertical-align: middle;
+
 }
 
 input {
@@ -95,32 +221,27 @@ input {
     margin: 10px 0;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: .15rem;
     border: none;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    flex: 1 0 0px;
+    width: 350px;
+
 }
 
 .btn {
     background-color: #5A67D8;
     color: white;
     box-shadow: 5px;
-    display: inline-block; 
+    display: inline-block;
     font-weight: 400;
     text-align: center;
     vertical-align: middle;
     padding: .375rem .75rem;
-    margin: 10px 0; 
+    margin: 10px 0;
     font-size: 1rem;
     line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: .15rem;
     border: none;
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    flex: 1 0 0px;
+    width: 105px;
 
 }
 
@@ -128,9 +249,6 @@ input {
 footer {
     background-color: #4A5568;
     color: white;
-    
+    padding: 3px;
+    vertical-align: middle;
 }
-
-
-
-
